@@ -10,7 +10,7 @@
 | 16/0006210	  |  Francisco Heronildo |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Os funcionários da empresa FRNT estavam reclamando do sinal ruim de wifi da empresa, então a empresa decidiu comprar roteadores e distribuí-los em pontos estratégicos na empresa, porém, o gasto com cabos para os roteadores da empresa pode acabar sendo muito caro, e a empresa precisa pensar numa solução que gaste o menos possível com cabos. Para isso utilizamos o algoritmo de Prim para determinar o menor custo para distribuir os roteadores nas extremidades da empresa. 
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
