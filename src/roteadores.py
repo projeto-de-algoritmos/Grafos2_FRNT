@@ -1,3 +1,6 @@
+import headpq
+import random
+
 n, m = input().split()
 n = int(n)
 m = int(m)
@@ -13,4 +16,10 @@ for j in range(m):
 
     n_out[a].append((b, c))
     n_out[b].append((a, c))
-    
+
+raiz = random.randint(0, n-1)
+
+for (x,c) in n_out[raiz]:
+    heapq.heappush(H, (c,raiz,x))
+
+marcados = [raiz]
