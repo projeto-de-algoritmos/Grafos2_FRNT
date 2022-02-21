@@ -6,7 +6,7 @@ n = int(n)
 m = int(m)
 
 H = []
-n_out = [[]*n for i in range(n)]
+n_out = [[]*n for i in range(m)]
 
 for j in range(m):
     a, b, c = input().split()
@@ -23,6 +23,9 @@ for (x,c) in n_out[raiz]:
     heapq.heappush(H, (c,raiz,x))
 
 marcados = [raiz]
+arv_ger_min = []
+n_aresta = 0
+custo = 0
 
 while n_aresta < n-1:
     while True:
