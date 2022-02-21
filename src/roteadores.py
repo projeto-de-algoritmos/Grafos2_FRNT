@@ -23,3 +23,22 @@ for (x,c) in n_out[raiz]:
     heapq.heappush(H, (c,raiz,x))
 
 marcados = [raiz]
+
+while n_aresta < n-1:
+    while True:
+        (c, a, b) = heapq.heappop(H)
+        if b not in marcados:
+            break
+    marcados.append(b)
+    print(a, b)
+    print(marcados)
+    custo += c
+    arv_ger_min.append((a, b))
+    n_aresta += 1
+
+    for (x, c) in n_out[b]:
+        if x not in marcados:
+            heapq.heappush(H, (c, b, x))
+
+print(custo)
+print(arv_ger_min)
