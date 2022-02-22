@@ -2,7 +2,7 @@ import heapq
 import random
 
 # ler numero de vertices e arestas
-n, m = input().split()
+n, m = input("Insira a quantidade de roteadores e cabos: ").split()
 n = int(n)
 m = int(m)
 
@@ -11,6 +11,7 @@ H = []
 # criando n listas vazias de vizinhos para cada nó 0 -> n-1
 n_out = [[]*n for i in range(m)]
 
+print("Insira os pontos entre os roteadores 'a' e 'b' e o tamanho do cabo 'c': ")
 # ler as m arestas do grafo
 for j in range(m):
     # ler aresta de a para b com custo
@@ -58,5 +59,5 @@ while n_aresta < n-1:
             heapq.heappush(H, (c, b, x))
 
 print("\n")
-print("Custo Total:", custo)
+print("Custo Total:", custo, "metros")
 print("Árvore Geradora Mínima:", arv_ger_min)
